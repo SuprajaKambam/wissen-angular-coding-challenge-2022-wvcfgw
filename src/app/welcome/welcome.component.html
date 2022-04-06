@@ -1,0 +1,33 @@
+<h3>Welcome to Wissen Coding Challenge!</h3>
+
+Your login details: <br />
+<p>Username: {{ user?.username }}</p>
+
+<div>
+  <table style="border: 2px black;border-radius: 5">
+    <thead>
+      <th>id</th>
+      <th>name</th>
+      <th>year</th>
+      <th>color</th>
+      <th>pantone_value</th>
+    </thead>
+    <tbody *ngFor="let user of userDetails.data">
+      <td>
+        {{ user.id }}
+      </td>
+      <td>
+        {{ user.name }}
+      </td>
+      <td>
+        {{ user.year }}
+      </td>
+      <td>
+        {{ user.color }}
+      </td>
+      <td>
+        {{ user.pantone_value }}
+      </td>
+    </tbody>
+  </table>
+</div>

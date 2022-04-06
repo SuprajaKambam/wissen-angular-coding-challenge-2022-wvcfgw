@@ -1,0 +1,27 @@
+<div>
+  <div>
+    <h3>Hello there, Sign in to continue</h3>
+
+    <div>
+      <form [formGroup]="loginForm">
+        <div>
+          <label>Email</label>
+          <input type="text" formControlName="email" />
+        </div>
+        <div>
+          <label>Password</label>
+          <input type="password" formControlName="password" />
+        </div>
+        <div>
+          <input type="checkbox" formControlName="checkbox" />
+          <label
+            >By Creating or logging into account, Yu areagreeing with our terms
+            and conditions and privacy policyies.
+          </label>
+        </div>
+
+        <button class="primary" (click)="onLogin()">Next</button>
+      </form>
+    </div>
+  </div>
+</div>
